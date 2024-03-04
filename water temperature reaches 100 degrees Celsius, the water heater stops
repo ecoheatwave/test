@@ -1,0 +1,14 @@
+def water_heater(initial_temp):
+    current_temp = initial_temp
+    
+    print("Water Heater started. Initial temperature:", initial_temp, "°C")
+    
+    while current_temp < 100:
+        current_temp += 1
+        print("Heating... Current temperature:", current_temp, "°C")
+        if current_temp == 100:
+            print("Water temperature reached 100°C. Heating stopped.")
+            break
+
+initial_temperature = float(input("Enter the initial water temperature in °C: "))
+water_heater(initial_temperature)
